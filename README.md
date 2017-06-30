@@ -1,2 +1,2 @@
 # pd-midilooper
-a MIDI looper for Pure Data
+a MIDI looper written in Pure Data
