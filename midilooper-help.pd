@@ -1,0 +1,75 @@
+#N canvas 0 23 921 398 12;
+#X obj 8 274 noteout 1;
+#X obj 53 133 tgl 15 0 empty empty generate_random_notes 17 7 0 10
+-262144 -1 -1 0 1;
+#X obj 8 152 spigot;
+#X obj 8 178 random 12;
+#X floatatom 8 228 5 0 0 0 - - -, f 5;
+#X obj 8 7 tgl 15 0 empty empty global_metronome 17 7 0 10 -262144
+-1 -1 0 1;
+#X obj 8 27 metro 1 120 permin;
+#X obj 8 52 s metro;
+#X obj 8 109 r metro;
+#X obj 277 120 midilooper 1;
+#X obj 277 95 r metro;
+#X msg 347 95 1;
+#X obj 347 58 bng 15 250 50 0 empty empty rec/start/stop 17 7 0 10
+-262144 -1 -1;
+#X msg 387 95 -1;
+#X obj 387 76 bng 15 250 50 0 empty empty clear 17 7 0 10 -262144 -1
+-1;
+#X floatatom 277 145 5 0 0 0 status - -, f 5;
+#X obj 308 167 s notes;
+#X obj 473 340 unpack f f;
+#X obj 473 365 noteout 17;
+#X obj 473 315 r notes;
+#X obj 448 120 midilooper 1;
+#X obj 448 95 r metro;
+#X msg 518 95 1;
+#X obj 518 58 bng 15 250 50 0 empty empty rec/start/stop 17 7 0 10
+-262144 -1 -1;
+#X msg 558 95 -1;
+#X obj 558 76 bng 15 250 50 0 empty empty clear 17 7 0 10 -262144 -1
+-1;
+#X floatatom 448 145 5 0 0 0 status - -, f 5;
+#X obj 479 167 s notes;
+#X obj 8 250 makenote 100 300;
+#X obj 8 203 + 40;
+#X obj 8 334 notein 1;
+#X floatatom 8 359 5 0 0 0 - - -, f 5;
+#X floatatom 69 359 5 0 0 0 - - -, f 5;
+#X text 8 303 IAC driver routes the MIDI back to PD.;
+#X text 472 291 Looper output is sent to external synthesizer.;
+#X text 276 192 Looper status: 0 - clear \, 1 - recording \, 2 - playing
+\, 3 - stopped;
+#X text 274 19 Both loopers listen for MIDI on channel 1 The first
+argument of midilooper determines the channel.;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;
+#X connect 3 0 29 0;
+#X connect 4 0 28 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 8 0 2 0;
+#X connect 9 0 15 0;
+#X connect 9 1 16 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 1;
+#X connect 12 0 11 0;
+#X connect 13 0 9 1;
+#X connect 14 0 13 0;
+#X connect 17 0 18 0;
+#X connect 17 1 18 1;
+#X connect 19 0 17 0;
+#X connect 20 0 26 0;
+#X connect 20 1 27 0;
+#X connect 21 0 20 0;
+#X connect 22 0 20 1;
+#X connect 23 0 22 0;
+#X connect 24 0 20 1;
+#X connect 25 0 24 0;
+#X connect 28 0 0 0;
+#X connect 28 1 0 1;
+#X connect 29 0 4 0;
+#X connect 30 0 31 0;
+#X connect 30 1 32 0;
