@@ -1,0 +1,26 @@
+#N canvas 237 91 450 300 10;
+#X obj 77 31 pack f f;
+#X obj 143 31 pack f f;
+#X obj 7 9 inlet arm;
+#X obj 77 9 notein \$1;
+#X obj 143 9 ctlin \$1;
+#X obj 199 9 bendin \$1;
+#X obj 7 168 loopermidiout \$2;
+#X obj 7 141 spigot;
+#X obj 100 141 spigot;
+#X obj 53 141 spigot;
+#X text 7 192 Route midi from channel \$1 to channel \$2 \, with armable
+spigot in between.;
+#X connect 0 0 7 0;
+#X connect 1 0 9 0;
+#X connect 2 0 7 1;
+#X connect 2 0 9 1;
+#X connect 2 0 8 1;
+#X connect 3 0 0 0;
+#X connect 3 1 0 1;
+#X connect 4 0 1 0;
+#X connect 4 1 1 1;
+#X connect 5 0 8 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 2;
+#X connect 9 0 6 1;

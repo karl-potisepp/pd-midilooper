@@ -1,0 +1,17 @@
+#N canvas 552 135 450 300 10;
+#X obj 21 18 inlet osc;
+#X obj 21 66 cyclone/fromsymbol;
+#X obj 55 88 cyclone/fromsymbol;
+#X obj 21 157 pack f f f;
+#X obj 21 128 swap;
+#X obj 21 184 outlet list;
+#X obj 21 45 unpack s s f;
+#X connect 0 0 6 0;
+#X connect 1 0 4 0;
+#X connect 2 0 4 1;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 4 1 3 1;
+#X connect 6 0 1 0;
+#X connect 6 1 2 0;
+#X connect 6 2 3 2;
