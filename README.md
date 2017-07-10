@@ -8,3 +8,4 @@ Usage demonstration can be found in midilooper-help.pd
 TODO:
   * update help and give example of muting, tempo change
   * BUG: pitch bend doesn't seem to work well
+  * test CC looping
