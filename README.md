@@ -1,7 +1,7 @@
 # pd-midilooper
 Added in this fork:
    * midilooper-MidiSync.pd
-
+   * Quantization of Rec/Stop
 
 TODO:
 
