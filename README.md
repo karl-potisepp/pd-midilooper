@@ -4,7 +4,7 @@ Added in this fork:
    * Quantization of Rec/Stop
 
 TODO:
-
+  * Overdub 
   * Sync with Ableton LINK 
   * update help and give example of muting, tempo change
   * BUG: pitch bend doesn't seem to work well

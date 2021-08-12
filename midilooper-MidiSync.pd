@@ -118,6 +118,7 @@ argument of midilooper determines the channel.;
 #X floatatom 860 278 5 0 0 0 - - -;
 #X msg 856 155 8;
 #X obj 823 394 - 2;
+#X text 108 419 OVERDUB ?;
 #X connect 0 0 6 0;
 #X connect 0 1 7 0;
 #X connect 0 1 28 0;
