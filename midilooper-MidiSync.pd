@@ -1,0 +1,15 @@
+Pd 0.50-2 on Linux armv7l
+--------------------------------------------------------------------------------
+------------------ done with main ----------------------
+Connection from 'pd' to 'pd-gui' on 127.0.0.1:49288
+Tk 8.6.9
+Detected font: DejaVu Sans Mono
+Using font: DejaVu Sans Mono bold
+Loading plugin: /usr/lib/puredata/tcl/pd_deken.tcl
+[deken] Platform detected: Linux-armv7l-float32
+Loading plugin: /usr/lib/puredata/tcl/pd_docsdir.tcl
+[deken] Platform re-detected: Linux-armv6-float32
+opened alsa client 132 in:1 out:1
+The Pd window filtered 12 lines
+Pd documents directory: /home/patch/pd
+saved to: /home/patch/my-pd-looper/midilooper-help.pd
